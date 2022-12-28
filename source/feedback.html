@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма отзыва</title>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      </button>
+      <a class="main-header__logo" href="index.html">
+        <img src="img/logo_sedona.png" width="185" height="96" alt="Логотип Седона.">
+      </a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a href="feedback.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="https://htmlacademy.ru">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-feedback main-container">
+    <img class="main-feedback__image" src="img/word-sedona.svg" width="460" height="80" alt="Слово Седона.">
+    <section class="feedback-title">
+      <div class="feedback-title__wrapper">
+        <h1 class="feedback-title__description">
+          Оставьте свой отзыв
+        </h1>
+        <p class="feedback-title__description">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+    </section>
+    <section class="feedback-form">
+      <h2 class="visually-hidden"> Форма обратной связи</h2>
+      <p class="feedback-form__start">Представьтесь:</p>
+      <form class="feedback-form__appointment" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="feedback-form__name" for="feedback-name">Имя*:</label>
+        <input class="feedback-form__place" type="text" id="feedback-name" name="feedback-name" placeholder="Петр"
+          required>
+        <label class="feedback-form__name" for="feedback-surname">Фамилия*:</label>
+        <input class="feedback-form__place" type="text" id="feedback-surname" name="feedback-surname"
+          placeholder="Пустота" required>
+        <label class="feedback-form__name" for="feedback-patronymic">Отчество:</label>
+        <input class="feedback-form__place" type="text" id="feedback-patronymic" name="feedback-patronymic"
+          placeholder="Викторович" required>
+      </form>
+
+      <p class="feedback-form__start">Контактная информация:</p>
+      <form class="feedback-form__contact" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="feedback-form__number" for="feedback-number">Контактный телефон*:</label>
+        <input class="feedback-form__place" type="tel" id="feedback-number" name="feedback-number"
+          placeholder="Введите телефон" required>
+        <label class="feedback-form__email" for="feedback-email">Электронная почта*:</label>
+        <input class="feedback-form__place" type="email" id="feedback-email" name="feedback-email"
+          placeholder="Введите e-mail" required>
+      </form>
+    </section>
+    <section class="experience">
+      <h3 class="visually-hidden">Общие впечатления о Седоне</h3>
+      <p class="experience__title">
+        Ваше общее впечатление:
+      </p>
+      <ul class="experience__item">
+        <li class="experience__description">
+          <label class="experience-control">
+            <input class="experience-control__state" type="radio" name="good" checked>
+            <span class="experience-label">Скорее положительное</span>
+          </label>
+        </li>
+        <li class="experience__description">
+          <label class="experience-control">
+            <input class="experience-control__state" type="radio" name="bad">
+            <span class="experience-label">Скорее отрицательное</span>
+          </label>
+        </li>
+        <li class="experience__description">
+          <label class="experience-control">
+            <input class="experience-control__state" type="radio" name="unknown">
+            <span class="experience-label">Затрудняюсь ответить</span>
+          </label>
+        </li>
+      </ul>
+    </section>
+    <section class="position">
+      <h3 class="visually-hidden">Любимые места в Седоне</h3>
+      <p class="position__title">
+        Посещенные достопримечательности:
+      </p>
+      <ul class="position__item">
+        <li class="position__description">
+          <label class="position-control">
+            <input class="position-control__point" type="checkbox" name="good" checked>
+            <span class="position-label">Мост Дьявола</span>
+          </label>
+        </li>
+        <li class="position__description">
+          <label class="position-control">
+            <input class="position-control__point" type="checkbox" name="bad" checked>
+            <span class="position-label">Гора-Колокол</span>
+          </label>
+        </li>
+        <li class="position__description">
+          <label class="position-control">
+            <input class="position-control__point" type="checkbox" name="unknown" checked>
+            <span class="position-label">Слайд-парк</span>
+          </label>
+        </li>
+        <li class="position__description">
+          <label class="position-control">
+            <input class="position-control__point" type="checkbox" name="unknown">
+            <span class="position-label">Красные скалы</span>
+          </label>
+        </li>
+      </ul>
+    </section>
+    <section class="review-emotion">
+      <h2 class="review-emotion__title">
+        Опишите свои эмоции:
+      </h2>
+      <input class="review-emotion__form" type="text" name="feedback-text"
+        placeholder="Опишите подробно все свои восторги">
+      <button class="review-emotion__button" type="submit">Отправить отзыв</button>
+      <p class="review-emotion__mandatory">* — обязательные поля</p>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__teg teg">
+        <b>#visitSEDONA</b>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"> Мы вконтакте</a>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+        </ul>
+      </div>
+      <div class="main-footer__design design">
+        <p class="design__text">Разработано:</p>
+        <a class="design__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
